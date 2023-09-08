@@ -17,7 +17,6 @@ const bilderArray = [
     'img16.jpg',
     'img17.jpg',
     'img18.jpg',
-    'img19.jpg'
 ];
 
 function load() {
