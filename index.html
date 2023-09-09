@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotogalerie</title>
-
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fotogalerie</title>
+        <link rel="icon" href="./img/icons8-gallery-48.png" type="image/png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
 <body onload="load()">
     <div id="allImages"></div>
     <div id="lightbox" style="display: none;">
         <span id="closeBtn" onclick="closeLightbox()">&times;</span>
-        <img id="lightboxImg">
+        <span id="leftArrow" onclick="switchImage(-1)">&#10094;</span>
+        <img id="lightboxImg" />
+        <span id="rightArrow" onclick="switchImage(1)">&#10095;</span>
     </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>
